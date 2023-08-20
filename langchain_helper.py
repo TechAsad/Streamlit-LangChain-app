@@ -1,4 +1,3 @@
-import google.generativeai as genai
 from langchain.llms import GooglePalm
 import os
 from langchain.llms import OpenAI
@@ -11,10 +10,10 @@ from langchain.chains import SequentialChain
 
 
 os.environ["GOOGLE_API_KEY"] = "AIzaSyD29fEos3V6S2L-AGSQgNu03GqZEIgJads"
-os.environ["OPENAI_API_KEY"] = "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"
+
 
 llm = GooglePalm(temperature = 0.9)
-llm2 = OpenAI(temperature = 0.9)
+
 
 
 def generate_game_name_and_functions(type):
