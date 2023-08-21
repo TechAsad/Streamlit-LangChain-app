@@ -71,13 +71,13 @@ def generate_game_name_and_functions(type):
 
     prompt_template_name = PromptTemplate(
        input_variables = ['type'],
-       template = "I want to buid a new never build before {type} game, Suggest only one fancy and creative name"
+       template = "I want to build a new never build before {type} game, Suggest only one fancy and creative name"
     )
     name_chain = LLMChain(llm=llm, prompt = prompt_template_name, output_key = "game_name")
     
     prompt_template_items = PromptTemplate(
         input_variables = ['game_name'],
-        template = "Write a short creative user manual for {game_name} game. Tell shortly in bullet points"
+        template = "Write a short creative user manual and system requirements for {game_name} game. Tell shortly in bullet points"
     )
 
     function_chain = LLMChain(llm=llm, prompt = prompt_template_items, output_key = 'functions')
