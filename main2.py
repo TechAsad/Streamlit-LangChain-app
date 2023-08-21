@@ -55,7 +55,7 @@ st.markdown('<div class="container">', unsafe_allow_html=True)
 
 # Input section on the left side
 st.markdown('<div class="content">', unsafe_allow_html=True)
-type = st.text_input("🎮 Enter a Game Type:", "")
+type = st.text_input("🎮 Enter a Game Type: For Example: Action, Arcade, Adventure, Battle Ground, etc.", "")
 st.markdown('</div>', unsafe_allow_html=True)
 
 
