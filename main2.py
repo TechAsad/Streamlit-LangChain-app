@@ -6,9 +6,6 @@ from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
 import streamlit as st
-from langchain_helper import generate_game_name_and_functions
-
-
 
 # Set page title and favicon
 st.set_page_config(page_title="Game Idea Generator", page_icon="🎮")
